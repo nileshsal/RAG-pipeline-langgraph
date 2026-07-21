@@ -1,0 +1,20 @@
+# Web framework used to expose the /ask endpoint
+fastapi
+# ASGI server that actually runs the FastAPI app ("[standard]" adds
+# performance + auto-reload extras)
+uvicorn[standard]
+
+# Orchestrates our simple retrieve -> generate graph
+langgraph
+
+# Official Anthropic SDK, used to call Claude
+anthropic
+
+# AWS SDK for Python, used to call Bedrock (Titan Embeddings)
+boto3
+
+# Official OpenSearch client, used to query AWS OpenSearch
+opensearch-py
+
+# Loads settings from a local .env file into environment variables
+python-dotenv
