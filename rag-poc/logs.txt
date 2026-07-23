@@ -1,13 +1,13 @@
-C:\Users\Administrator\Documents\KMSChatBot> python -m uvicorn app:app --reload                                                          
+ C:\Users\Administrator\Documents\KMSChatBot> python -m uvicorn app:app --reload
 INFO:     Will watch for changes in these directories: ['C:\\Users\\Administrator\\Documents\\KMSChatBot']
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [4664] using WatchFiles
+INFO:     Started reloader process [11104] using WatchFiles
 729 chunks saved successfully in chunks.json
-INFO:     Started server process [11096]
+INFO:     Started server process [12316]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     127.0.0.1:62884 - "GET /docs HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62884 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60227 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60227 - "GET /openapi.json HTTP/1.1" 200 OK
 [opensearch_client] Calling AWS as identity:
     Account: 892880329963
     Arn:     arn:aws:sts::892880329963:assumed-role/CUSPFE-S3ListPolicyKMSRole/i-06d7279ee5a63fa0b
@@ -19,7 +19,7 @@ INFO:     127.0.0.1:62884 - "GET /openapi.json HTTP/1.1" 200 OK
     OPENSEARCH_REGION:  ap-southeast-1
 [opensearch_client] Searching index: 'kms-index-sop'
 [opensearch_client] Query shape: knn on field 'embedding', k=3, vector length=1024
-INFO:     127.0.0.1:56721 - "POST /ask HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:59012 - "POST /ask HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 422, in run_asgi
@@ -132,28 +132,17 @@ Traceback (most recent call last):
     answer = llm.ask_claude(question, chunks)
   File "C:\Users\Administrator\Documents\KMSChatBot\llm.py", line 79, in ask_claude
     response = bedrock_runtime.invoke_model(
-    
-    ...<3 lines>...
-    
+            modelId= config.ANTHROPIC_MODEL,
+            body= request_body,
+            contentType="application/json",
         )
   File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\botocore\client.py", line 606, in _api_call
     return self._make_api_call(operation_name, kwargs)
            ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\botocore\context.py", line 123, in wrapper
     return func(*args, **kwargs)
-  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\botocore\client.py", line 1051, in _make_api_call
-    request_dict = self._convert_to_request_dict(
-        api_params=api_params,
-    ...<3 lines>...
-        headers=additional_headers,
-    )
-  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\botocore\client.py", line 1118, in _convert_to_request_dict
-    request_dict = self._serializer.serialize_to_request(
-        api_params, operation_model
-    )
-  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\botocore\validate.py", line 424, in serialize_to_request
-    raise ParamValidationError(report=report.generate_report())
-botocore.exceptions.ParamValidationError: Parameter validation failed:
-Missing required parameter in input: "modelId"
-Unknown parameter in input: "modelID", must be one of: body, contentType, accept, modelId, trace, guardrailIdentifier, guardrailVersion, performanceConfigLatency, serviceTier, requestMetadata
-During task with name 'generate' and id '77347c06-80c3-48c7-f679-c9408584315e'
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\botocore\client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.ValidationException: An error occurred (ValidationException) when calling the InvokeModel operation: 'messages' must not be empty
+During task with name 'generate' and id '4a93f5dc-29f8-a2e1-6e8f-33550b9d86ef'
+
