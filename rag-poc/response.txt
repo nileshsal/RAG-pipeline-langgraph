@@ -1,3 +1,27 @@
+#AWS_REGION=us-east-1
+TITAN_REGION=us-east-1
+OPENSEARCH_REGION=ap-southeast-1
+BEDROCK_REGION=ap-southeast-1
+
+OPENSEARCH_HOST=mc9xamsc1uiy9cxgnwt9.aoss.ap-southeast-1.on.aws
+OPENSEARCH_PORT=443
+OPENSEARCH_INDEX=kms-index-sop
+OPENSEARCH_SERVICE=aoss
+
+# field names
+VECTOR_FIELD_NAME=embedding
+#CONTENT_FIELD_NAME=content
+CONTENT_FIELD_NAME=content
+TITAN_EMBEDDING_MODEL=amazon.titan-embed-text-v2:0
+
+#ANTHROPIC_API_KEY=
+ANTHROPIC_MODEL=arn:aws:bedrock:ap-southeast-1:892880329963:inference-profile/global.anthropic.claude-sonnet-4-6
+
+TOP_K=3
+
+
+
+
 Enter your query: form 7 details
 
 Generating embedding...
