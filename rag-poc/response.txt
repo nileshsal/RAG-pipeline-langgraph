@@ -1,0 +1,148 @@
+Enter your query: form 7 details
+
+Generating embedding...
+Embedding generated. Length = 1024
+
+Searching OpenSearch...
+[opensearch_client] Calling AWS as identity:
+    Account: 892880329963
+    Arn:     arn:aws:sts::892880329963:assumed-role/CUSPFE-S3ListPolicyKMSRole/i-06d7279ee5a63fa0b
+[opensearch_client] Connection settings being used:
+    OPENSEARCH_HOST:    mc9xamsc1uiy9cxgnwt9.aoss.ap-southeast-1.on.aws
+    OPENSEARCH_PORT:    443
+    OPENSEARCH_INDEX:   kms-index-sop
+    OPENSEARCH_SERVICE: aoss
+    AWS_REGION:         us-east-1
+[opensearch_client] Searching index: 'kms-index-sop'
+[opensearch_client] Query shape: knn on field 'embedding', k=5, vector length=1024
+
+Top Matches
+================================================================================
+
+Results Type: <class 'list'>
+
+================================================================================
+Rank #1
+Type : Text Chunk
+Text : 7.1. Appendix 1: Example FORM 7 Batch Certification
+
+================================================================================
+Rank #2
+Type : Text Chunk
+Text : This purpose of this Work Instruction (WI) is to provides the steps on how to complete the FORM 7.
+
+================================================================================
+Rank #3
+Type : Text Chunk
+Text : Table Of Content
+
+1. Purpose
+
+2
+
+Scope
+
+2
+
+2.
+
+Definitions, Acronyms & Related documents
+
+2
+
+3.
+
+3.1. Acronyms
+
+2
+
+3.2. Definitions
+
+2
+
+3.3. Related documents
+
+2
+
+General Requirements
+
+4.
+
+3
+
+5. Procedure
+
+3
+
+Process flow - Form 7 -C19V to Pakistan
+
+3
+
+5.1.
+
+Process flow - Form 7 - Ex Belgium to Pakistan
+
+5.2.
+
+4
+
+How to complete FORM 7
+
+5.3.
+
+5
+
+History of Changes
+
+6.
+
+8
+
+7. Appendix
+
+9
+
+Appendix 1: Example FORM 7 Batch Certification
+
+9
+
+7.1.
+
+7.2. Appendix 2: How to find the HS code?
+
+10
+
+7.3. Appendix 3: How to find the name and the address of the manufacturer?
+
+11
+
+Pfizer Internal Use - Page 1 of 11 Unofficial 24h after printing
+
+13-Dec-2024 06:09:44 GMT
+
+================================================================================
+Rank #4
+Type : Text Chunk
+Text : [TABLE START] +------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+| Form | 7 - Ex-Belgium Pakistan | shipment to |
++------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+| | IO CSR SIN | IO Quality |
++------+-----------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+| | Monitor shipment status in SAP - ZPMON (ISO, XD, VLSP) OBD ready to ship / Pick pack completed Yes Issue documents ( invoice packing list COO | |
++------+--------------------------------------
+
+================================================================================
+Rank #5
+Type : Text Chunk
+Text : This work instruction is applicable for Covid-19 vaccine (C19V) shipments and conventional shipments being exported from Belgium In Stock out and Singapore SRDC to Pakistan. The Drug Regulatory Authority of Pakistan (DRAP) and the Pakistan customs require a specific document, referred to as FORM 7 (see example in 7.1 Appendix 1), which contains details about the shipped batch.
+
+The FORM 7 should be signed by IO quality as an additional document (a local requirement for Pakistan) according to the CoC issued. This is a requirement prior GDP release is performed according to EU legislation for every shipment to:
+
+- Pakistan
+
+- the Importer of Records (IOR) is Pfizer Pakistan
+
+The FORM 7 is not required for Donation C19V shipment in which the IOR is the government in Pakistan.
+
+Please note that FORM 7 cannot replace the Certificate of Compliance (CoC).
+PS C:\Users\Administrator\Documents\KMSChatBot
