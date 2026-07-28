@@ -1,0 +1,21 @@
+FINAL Folder Structure, how it looks on github:
+
+if i go inside git on these folders :
+kms-aichatbot-repository/tree/main/KMSChatbotProjAgenticAI:
+
+under KMSChatbotProjAgenticAI we have following:
+|
+|--app (folder)--
+	|-- agents(folder)
+	|--api (folder)--has--routes (folder)
+	|--config (folder)
+	|--graph (folder)--has--nodes (folder)
+	|--injection (folder)
+	|--llm(folder)
+	|--models (folder)
+	|--prompts (folder)
+	|--rag (folder)
+	|--services (folder)
+	|--tools (folder)
+	|--utils (folder)
+|--vectordb (folder)
