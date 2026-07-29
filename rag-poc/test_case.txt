@@ -1,0 +1,38 @@
+# =============================================================================
+
+# TEST USE CASE
+
+# =============================================================================
+ 
+"""
+
+from app.utils.json_normalizer_dynamic import (
+
+    normalize_response,
+
+    get_json_string
+
+)
+
+"""
+ 
+if __name__ == "__main__":
+ 
+    llm_response = {
+
+	"answer": "```json\n{\n    \"answer\": {\n        \"description\": \"The name and address of the manufacturer for a product like COMIRNATY can be found on the Certificate of Analysis (CoA).\",\n        \"header\": \"Finding the Manufacturer's Name and Address\",\n        \"question_id\": \"Q001\",\n        \"subheader\": \"Appendix 3 - Batch Attachment Lookup\",\n        \"references\": [\n            \"SOP-124627\",\n            \"COA Document\"\n        ],\n        \"steps\": [\n            \"Open Batch Record\",\n            \"Open Attachment List\",\n            \"Open Certificate of Analysis\"\n        ]\n    }\n}\n```"
+
+    }
+ 
+    #sample_input2 = "Its now Dymamic"
+ 
+    print(
+
+        get_json_string(
+
+            llm_response
+
+        )
+
+    )	
+ 
