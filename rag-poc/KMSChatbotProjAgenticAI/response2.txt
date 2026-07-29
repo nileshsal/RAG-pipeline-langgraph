@@ -1,0 +1,114 @@
+{
+    "answer": "{\n    \"answer\": {\n        \"description\": \"The retrieved context does not provide detailed content about Form 7 itself. It only shows an appendix reference titled 'Example FORM 7 Batch Certification,' which is part of a larger Work Instruction (WI) document explaining how to complete Form 7. The available information is limited to the table of contents and section references, so specific details about Form 7's fields, purpose, or certification process are not available in this context.\",\n        \"header\": \"Form 7 Details\",\n        \"question_id\": \"\",\n        \"references\": [\n            \"Section 7.1: Appendix 1 - Example FORM 7 Batch Certification\",\n            \"Section 5.3: How to complete FORM 7\",\n            \"Section 5.1 & 5.2: Process flow - Form 7 (C19V to Pakistan / Ex Belgium to Pakistan)\"\n        ],\n        \"subheader\": \"Example FORM 7 Batch Certification (Appendix Reference)\"\n    }\n}"
+}
+
+
+================================================
+
+ON terminal I can see below :
+
+ python -m uvicorn app:app --host 0.0.0.0 --port 8001 --reload
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Administrator\\Documents\\git-rep\\r1-KMS\\kms-aichatbot-repository\\KMSChatbotProjAgenticAI']
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [12212] using WatchFiles
+INFO:     Started server process [9424]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[opensearch_client] Calling AWS as identity:
+    Account: 892880329963
+    Arn:     arn:aws:sts::892880329963:assumed-role/CUSPFE-S3ListPolicyKMSRole/i-06d7279ee5a63fa0b
+[opensearch_client] Connection settings being used:
+    OPENSEARCH_HOST:    mc9xamsc1uiy9cxgnwt9.aoss.ap-southeast-1.on.aws
+    OPENSEARCH_PORT:    443
+    OPENSEARCH_INDEX:   kms-index-sop
+    OPENSEARCH_SERVICE: aoss
+    OPENSEARCH_REGION:  ap-southeast-1
+[opensearch_client] Searching index: 'kms-index-sop'
+[opensearch_client] Query shape: knn on field 'embedding', k=3, vector length=1024
+INFO:     10.116.90.15:65177 - "POST /internal/v1/orchestrate/chat HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'json_normalizer_dynamic.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9424]
+INFO:     Started server process [10944]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'json_normalizer_dynamic.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [10944]
+WARNING:  WatchFiles detected changes in 'json_normalizer_dynamic.py'. Reloading...
+ Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=12212, pipe_handle=600)
+                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\multiprocessing\spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\uvicorn\__init__.py", line 2, in <module>
+    from uvicorn.main import Server, main, run
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\uvicorn\main.py", line 33, in <module>
+    from uvicorn.supervisors import ChangeReload, Multiprocess
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\uvicorn\supervisors\__init__.py", line 12, in <module>
+    from uvicorn.supervisors.watchfilesreload import WatchFilesReload as ChangeReload
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\uvicorn\supervisors\watchfilesreload.py", line 7, in <module>
+    from watchfiles import watch
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\watchfiles\__init__.py", line 2, in <module>
+    from .main import Change, awatch, watch
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\watchfiles\main.py", line 10, in <module>
+    import anyio
+  File "C:\Users\Administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\anyio\__init__.py", line 29, in <module>
+    from ._core._fileio import AsyncFile as AsyncFile
+  File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 851, in get_code
+  File "<frozen importlib._bootstrap_external>", line 950, in get_data
+KeyboardInterrupt
+INFO:     Started server process [4176]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[opensearch_client] Calling AWS as identity:
+    Account: 892880329963
+    Arn:     arn:aws:sts::892880329963:assumed-role/CUSPFE-S3ListPolicyKMSRole/i-06d7279ee5a63fa0b
+[opensearch_client] Connection settings being used:
+    OPENSEARCH_HOST:    mc9xamsc1uiy9cxgnwt9.aoss.ap-southeast-1.on.aws
+    OPENSEARCH_PORT:    443
+    OPENSEARCH_INDEX:   kms-index-sop
+    OPENSEARCH_SERVICE: aoss
+    OPENSEARCH_REGION:  ap-southeast-1
+[opensearch_client] Searching index: 'kms-index-sop'
+[opensearch_client] Query shape: knn on field 'embedding', k=3, vector length=1024
+INFO:     10.116.90.15:54900 - "POST /internal/v1/orchestrate/chat HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'json_normalizer_dynamic.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4176]
+WARNING:  WatchFiles detected changes in 'json_normalizer_dynamic.py'. Reloading...
+ INFO:     Started server process [9420]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9420]
+INFO:     Started server process [9580]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[opensearch_client] Calling AWS as identity:
+    Account: 892880329963
+    Arn:     arn:aws:sts::892880329963:assumed-role/CUSPFE-S3ListPolicyKMSRole/i-06d7279ee5a63fa0b
+[opensearch_client] Connection settings being used:
+    OPENSEARCH_HOST:    mc9xamsc1uiy9cxgnwt9.aoss.ap-southeast-1.on.aws
+    OPENSEARCH_PORT:    443
+    OPENSEARCH_INDEX:   kms-index-sop
+    OPENSEARCH_SERVICE: aoss
+    OPENSEARCH_REGION:  ap-southeast-1
+[opensearch_client] Searching index: 'kms-index-sop'
+[opensearch_client] Query shape: knn on field 'embedding', k=3, vector length=1024
+INFO:     10.116.90.15:63409 - "POST /internal/v1/orchestrate/chat HTTP/1.1" 200 OK
