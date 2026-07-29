@@ -1,0 +1,38 @@
+{
+
+    "answer": {
+
+        "description": "The context refers to a Work Instruction document centered on FORM 7, which deals with batch certification. The document explains how to properly complete FORM 7, covering scenarios such as shipments from C19V to Pakistan and from Belgium to Pakistan. It also includes supporting appendices that guide users on finding relevant details, like HS codes and manufacturer information, needed to fill out the form accurately. However, the specific content of FORM 7 itself, such as its fields or detailed formatting requirements, is not included in the retrieved context.",
+
+        "header": "FORM 7 Batch Certification - Work Instruction Overview",
+
+        "question_id": "",
+
+        "references": [
+
+            "Appendix 1: Example FORM 7 Batch Certification",
+
+            "Appendix 2: How to find the HS code?",
+
+            "Appendix 3: How to find the name and the address of the manufacturer?"
+
+        ],
+
+        "steps": {
+
+            "step_1": "Understand the purpose of FORM 7, which is to guide completion of batch certification documentation.",
+
+            "step_2": "Review the applicable process flow depending on the shipment route",
+
+            "step_4": "Refer to the appendices for additional details needed while filling the form",
+
+            "step_6": "Complete FORM 7 following the example provided in Appendix 1"
+
+        },
+
+        "subheader": "Purpose and Supporting Information"
+
+    }
+
+}
+ 
